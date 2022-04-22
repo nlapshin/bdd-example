@@ -18,5 +18,8 @@
   "description": "",
   "devDependencies": {
     "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "node-fetch-commonjs": "^3.1.1"
   }
 }
