@@ -12,9 +12,14 @@ module.exports = class Exchange {
     const list = await this.fetchData()
 
     return list.map(item => {
-      item.Diff = +(item.Value - item.Previous).toFixed(6)
+      item.Diff = +(item.Value - item.Previous).toFixed(4)
 
       return item
     })
   }
 }
+
+
+// Конфигурация проекта для тестирования утилиты tree из предыдущих заданий.
+// Добиться code coverage 95%.
+// Можно использовать пакет для моков файловой системы.
